@@ -1,0 +1,45 @@
+<footer id="footer-contact">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="../nexcon-logo-horizontal-light.png" alt="Nexcon Building Management" class="logo-img">
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Address</h4>
+          <p>Unit 8, 197-199 Springvale Road<br>Nunawading, VIC 3131</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="Kevin-Chan">Kevin Chan</a>
+          <a href="tel:+61411330962">+61 411 330 962</a>
+          <a href="mailto:kmtang@nexconbm.com.au">kmtang@nexconbm.com.au</a>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="{{HOME}}#services">Build specialist</a>
+          <a href="{{HOME}}#house-and-land">House &amp; land</a>
+          <a href="{{HOME}}#inspection">House inspections</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; <span id="year"></span> Nexcon Building Management Pty Ltd</div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const siteNav = document.getElementById('siteNav');
+  navToggle.addEventListener('click', () => {
+    const open = siteNav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', String(open));
+  });
+  siteNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      siteNav.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
