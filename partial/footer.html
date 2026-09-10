@@ -6,20 +6,20 @@
       </div>
       <div class="footer-cols">
         <div class="footer-col">
-          <h4>Address</h4>
+          <h4 data-i18n="footer_address_label">Address</h4>
           <p>Unit 8, 197-199 Springvale Road<br>Nunawading, VIC 3131</p>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
-          <a href="Kevin-Chan">Kevin Chan</a>
+          <h4 data-i18n="footer_contact_label">Contact</h4>
+          <p class="footer-contact-name">Kevin Chan 陳嘉文</p>
           <a href="tel:+61411330962">+61 411 330 962</a>
-          <a href="mailto:kmtang@nexconbm.com.au">kmtang@nexconbm.com.au</a>
+          <a href="mailto:kevin@nexcongroup.com.au">kevin@nexcongroup.com.au</a>
         </div>
         <div class="footer-col">
-          <h4>Explore</h4>
-          <a href="{{HOME}}#services">Build specialist</a>
-          <a href="{{HOME}}#house-and-land">House &amp; land</a>
-          <a href="{{HOME}}#inspection">House inspections</a>
+          <h4 data-i18n="footer_explore_label">Explore</h4>
+          <a href="{{HOME}}#services" data-i18n="nav_services">Build specialist</a>
+          <a href="{{HOME}}#house-and-land" data-i18n="nav_house_land">House &amp; land</a>
+          <a href="{{HOME}}#inspection" data-i18n="nav_inspections">House inspections</a>
         </div>
       </div>
     </div>
@@ -27,6 +27,8 @@
   </div>
 </footer>
 
+<script src="../translations.js"></script>
+<script src="../i18n.js"></script>
 <script>
   const navToggle = document.getElementById('navToggle');
   const siteNav = document.getElementById('siteNav');

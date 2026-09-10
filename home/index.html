@@ -7,8 +7,8 @@
 <meta name="description" content="Nexcon Building Management designs and builds custom homes, house and land packages, knockdown rebuilds and renovations across Melbourne's east.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@500;600;700;800&family=Archivo:wght@400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css?v=8">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@500;600;700;800&family=Archivo:wght@400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=9">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
   </defs>
 </svg>
 
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main" data-i18n="skip_link">Skip to content</a>
 
 <header class="site-header">
   <div class="header-inner">
@@ -30,11 +30,12 @@
       <img src="../nexcon-logo-horizontal.png" alt="Nexcon Building Management" class="logo-img">
     </a>
     <nav class="site-nav" id="siteNav">
-      <a href="#services">Build specialist</a>
-      <a href="#house-and-land">House &amp; land</a>
-      <a href="#inspection">House inspections</a>
-      <a href="../about/">About</a>
-      <a href="#footer-contact">Contact</a>
+      <a href="#services" data-i18n="nav_services">Build specialist</a>
+      <a href="#house-and-land" data-i18n="nav_house_land">House &amp; land</a>
+      <a href="#inspection" data-i18n="nav_inspections">House inspections</a>
+      <a href="../about/" data-i18n="nav_about">About</a>
+      <a href="#footer-contact" data-i18n="nav_contact">Contact</a>
+      <button id="langToggle" class="lang-toggle" type="button" aria-label="切換至中文">中文</button>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav"><span></span></button>
   </div>
@@ -46,11 +47,11 @@
   <section class="hero" id="top">
         <div class="hero-inner">
       <div class="hero-copy">
-        <h1 class="heading heading-on-dark">A dream home, planned around you.</h1>
-        <p class="lede lede-on-dark">Building with Nexcon means the freedom to shape a design that's genuinely yours — from house and land packages to custom design, knockdown rebuilds, and renovations.</p>
+        <h1 class="heading heading-on-dark" data-i18n="hero_h1">A dream home, planned around you.</h1>
+        <p class="lede lede-on-dark" data-i18n="hero_lede">Building with Nexcon means the freedom to shape a design that's genuinely yours — from house and land packages to custom design, knockdown rebuilds, and renovations.</p>
         <div class="hero-actions">
-          <a href="#footer-contact" class="pill pill-primary" style="background:var(--blush); color:var(--mahogany);">Start your build</a>
-          <a href="#house-and-land" class="pill pill-outline">View house &amp; land packages</a>
+          <a href="#footer-contact" class="pill pill-primary" style="background:var(--blush); color:var(--mahogany);" data-i18n="hero_btn_start">Start your build</a>
+          <a href="#house-and-land" class="pill pill-outline" data-i18n="hero_btn_view">View house &amp; land packages</a>
         </div>
       </div>
       <div class="hero-motif" aria-hidden="true">
@@ -62,20 +63,20 @@
   <div class="trust-strip">
     <div class="wrap trust-strip-inner">
       <div class="trust-item">
-        <p class="trust-figure">7-Year</p>
-        <p class="trust-label">Structural warranty on every build</p>
+        <p class="trust-figure" data-i18n="trust1_figure">7-Year</p>
+        <p class="trust-label" data-i18n="trust1_label">Structural warranty on every build</p>
       </div>
       <div class="trust-item">
-        <p class="trust-figure">Fixed</p>
-        <p class="trust-label">Price house and land packages, no surprises</p>
+        <p class="trust-figure" data-i18n="trust2_figure">Fixed</p>
+        <p class="trust-label" data-i18n="trust2_label">Price house and land packages, no surprises</p>
       </div>
       <div class="trust-item">
-        <p class="trust-figure">Full</p>
-        <p class="trust-label">Building &amp; PCI inspections across Victoria</p>
+        <p class="trust-figure" data-i18n="trust3_figure">Full</p>
+        <p class="trust-label" data-i18n="trust3_label">Building &amp; PCI inspections across Victoria</p>
       </div>
       <div class="trust-item">
-        <p class="trust-figure">Melbourne</p>
-        <p class="trust-label">Our service area</p>
+        <p class="trust-figure" data-i18n="trust4_figure">Melbourne</p>
+        <p class="trust-label" data-i18n="trust4_label">Our service area</p>
       </div>
     </div>
   </div>
@@ -83,60 +84,60 @@
   <section id="services">
     <div class="divider">
             <div class="divider-inner">
-        <h2 class="heading heading-on-dark">Our build services</h2>
-        <p class="lede lede-on-dark">Stay with Nexcon, realise your dream.</p>
+        <h2 class="heading heading-on-dark" data-i18n="services_divider_h2">Our build services</h2>
+        <p class="lede lede-on-dark" data-i18n="services_divider_lede">Stay with Nexcon, realise your dream.</p>
       </div>
     </div>
     <div class="content-block">
       <div class="wrap content-grid">
         <div class="content-side">
-          <p class="eyebrow">Build specialist</p>
-          <h3 class="heading">Peace of mind, start to finish</h3>
-          <p class="lede">Whichever construction service you're after — a simple renovation, an extension, or starting from scratch — our professional inspection team monitors the build and checks every stage against the required standard.</p>
+          <p class="eyebrow" data-i18n="services_eyebrow">Build specialist</p>
+          <h3 class="heading" data-i18n="services_h3">Peace of mind, start to finish</h3>
+          <p class="lede" data-i18n="services_lede">Whichever construction service you're after — a simple renovation, an extension, or starting from scratch — our professional inspection team monitors the build and checks every stage against the required standard.</p>
         </div>
         <div class="service-list">
           <div class="service-item service-item-media">
             <img src="service-renovation.webp" alt="Renovation of an existing home" class="service-img">
             <div>
-              <p class="detail-label">Renovation</p>
-              <p class="body-copy">Many of our customers renovate their existing home to avoid the cost of buying and moving. It's the ideal option if you want to keep elements of your home and stay in the neighbourhood you love. Contact us for more information.</p>
+              <p class="detail-label" data-i18n="svc_renovation_label">Renovation</p>
+              <p class="body-copy" data-i18n="svc_renovation_body">Many of our customers renovate their existing home to avoid the cost of buying and moving. It's the ideal option if you want to keep elements of your home and stay in the neighbourhood you love. Contact us for more information.</p>
             </div>
           </div>
           <div class="service-item service-item-media">
             <img src="service-knockdown-rebuild.webp" alt="Demolition for a knockdown rebuild" class="service-img">
             <div>
-              <p class="detail-label">Knockdown rebuild</p>
-              <p class="body-copy">A knockdown rebuild means designing, applying for permits, demolition, rebuilding, and inspection — a tedious journey to take on alone. Let us give you a hand: our project management team guides you through the entire process.</p>
+              <p class="detail-label" data-i18n="svc_knockdown_label">Knockdown rebuild</p>
+              <p class="body-copy" data-i18n="svc_knockdown_body">A knockdown rebuild means designing, applying for permits, demolition, rebuilding, and inspection — a tedious journey to take on alone. Let us give you a hand: our project management team guides you through the entire process.</p>
             </div>
           </div>
           <div class="service-item service-item-media">
             <img src="service-extensions.webp" alt="A modern home extension with bi-fold doors" class="service-img">
             <div>
-              <p class="detail-label">Extensions</p>
-              <p class="body-copy">An extension or home addition adds value to your property and makes the most of the space you already have — an extra floor, bedroom, living room, or garage. Contact us for more information.</p>
+              <p class="detail-label" data-i18n="svc_extensions_label">Extensions</p>
+              <p class="body-copy" data-i18n="svc_extensions_body">An extension or home addition adds value to your property and makes the most of the space you already have — an extra floor, bedroom, living room, or garage. Contact us for more information.</p>
             </div>
           </div>
           <div class="service-item service-item-media">
             <img src="service-custom-design.webp" alt="Client reviewing a custom home design model" class="service-img">
             <div>
-              <p class="detail-label">Custom design</p>
-              <p class="body-copy">Can't find the perfect home design? Talk to our specialist design team about your ideas and we'll work together to build your dream home — going above and beyond while staying cost-effective.</p>
+              <p class="detail-label" data-i18n="svc_customdesign_label">Custom design</p>
+              <p class="body-copy" data-i18n="svc_customdesign_body">Can't find the perfect home design? Talk to our specialist design team about your ideas and we'll work together to build your dream home — going above and beyond while staying cost-effective.</p>
             </div>
           </div>
           <div class="service-item service-item-media">
             <img src="service-multi-unit-development.webp" alt="Completed multi-unit townhouse development" class="service-img">
             <div>
-              <p class="detail-label">Multi-unit development</p>
-              <p class="body-copy">Residential units in Melbourne keep growing in popularity as people look for cost-effective ways to live close to the city. If you're a developer or investor, you need a builder who takes ownership of the project and delivers on time and on budget. From concept, design, and approval through to construction and handover, Nexcon has successfully delivered projects to completion — whether that's a large-scale project such as a land subdivision or a townhouse development, or a single lot where you want a block of units built. Sit back and enjoy your new home, backed by a 7-year structural warranty from your builder.</p>
+              <p class="detail-label" data-i18n="svc_multiunit_label">Multi-unit development</p>
+              <p class="body-copy" data-i18n="svc_multiunit_body">Residential units in Melbourne keep growing in popularity as people look for cost-effective ways to live close to the city. If you're a developer or investor, you need a builder who takes ownership of the project and delivers on time and on budget. From concept, design, and approval through to construction and handover, Nexcon has successfully delivered projects to completion — whether that's a large-scale project such as a land subdivision or a townhouse development, or a single lot where you want a block of units built. Sit back and enjoy your new home, backed by a 7-year structural warranty from your builder.</p>
             </div>
           </div>
           <div class="service-item">
-            <p class="detail-label">Project management</p>
-            <p class="body-copy">One point of contact overseeing your build from permits through to handover — coordinating trades, timelines, and inspections so nothing falls through the cracks.</p>
+            <p class="detail-label" data-i18n="svc_projectmgmt_label">Project management</p>
+            <p class="body-copy" data-i18n="svc_projectmgmt_body">One point of contact overseeing your build from permits through to handover — coordinating trades, timelines, and inspections so nothing falls through the cracks.</p>
           </div>
           <div class="service-item">
-            <p class="detail-label">Property maintenance</p>
-            <p class="body-copy">Ongoing repairs and upkeep for your home or investment property, from minor fixes to ongoing scheduled maintenance. Contact us for more information.</p>
+            <p class="detail-label" data-i18n="svc_propertymaint_label">Property maintenance</p>
+            <p class="body-copy" data-i18n="svc_propertymaint_body">Ongoing repairs and upkeep for your home or investment property, from minor fixes to ongoing scheduled maintenance. Contact us for more information.</p>
           </div>
         </div>
       </div>
@@ -146,25 +147,25 @@
   <section id="house-and-land">
     <div class="divider">
             <div class="divider-inner">
-        <h2 class="heading heading-on-dark">House and land</h2>
-        <p class="lede lede-on-dark">Whatever it is, the way you buy house and land can make all the difference to your lifestyle.</p>
+        <h2 class="heading heading-on-dark" data-i18n="hal_divider_h2">House and land</h2>
+        <p class="lede lede-on-dark" data-i18n="hal_divider_lede">Whatever it is, the way you buy house and land can make all the difference to your lifestyle.</p>
       </div>
     </div>
     <div class="content-block">
       <div class="wrap content-grid">
         <div class="content-side">
-          <p class="eyebrow">House and land package</p>
-          <h3 class="heading">Not just a package</h3>
-          <p class="lede">At Nexcon, you're not buying a typical house and land package — you're buying one that's cost-effective and genuinely functional.</p>
+          <p class="eyebrow" data-i18n="hal_eyebrow">House and land package</p>
+          <h3 class="heading" data-i18n="hal_h3">Not just a package</h3>
+          <p class="lede" data-i18n="hal_lede">At Nexcon, you're not buying a typical house and land package — you're buying one that's cost-effective and genuinely functional.</p>
         </div>
         <div class="service-list">
           <div class="service-item">
-            <p class="detail-label">Trusted land partners</p>
-            <p class="body-copy">We work closely with reputable land development partners across Melbourne and regional Victoria, so you can be confident of finding the right location and home design for your needs.</p>
+            <p class="detail-label" data-i18n="hal_trusted_label">Trusted land partners</p>
+            <p class="body-copy" data-i18n="hal_trusted_body">We work closely with reputable land development partners across Melbourne and regional Victoria, so you can be confident of finding the right location and home design for your needs.</p>
           </div>
           <div class="service-item">
-            <p class="detail-label">Fixed price</p>
-            <p class="body-copy">Every one of our house and land packages is fixed price, so what you're quoted is what you pay.</p>
+            <p class="detail-label" data-i18n="hal_fixed_label">Fixed price</p>
+            <p class="body-copy" data-i18n="hal_fixed_body">Every one of our house and land packages is fixed price, so what you're quoted is what you pay.</p>
           </div>
         </div>
       </div>
@@ -174,25 +175,25 @@
   <section id="inspection">
     <div class="divider">
             <div class="divider-inner">
-        <h2 class="heading heading-on-dark">House inspections</h2>
-        <p class="lede lede-on-dark">An independent set of eyes at the stage that matters most to you — before problems get built over.</p>
+        <h2 class="heading heading-on-dark" data-i18n="insp_divider_h2">House inspections</h2>
+        <p class="lede lede-on-dark" data-i18n="insp_divider_lede">An independent set of eyes at the stage that matters most to you — before problems get built over.</p>
       </div>
     </div>
     <div class="content-block">
       <div class="wrap content-grid">
         <div class="content-side">
-          <p class="eyebrow">House inspections</p>
-          <h3 class="heading">How it works</h3>
-          <p class="lede">We provide a range of residential property inspections, including existing Building Inspections and Practical Completion (PCI) inspections. We cover most areas in Victoria — contact us for more details and a free quotation.</p>
+          <p class="eyebrow" data-i18n="insp_eyebrow">House inspections</p>
+          <h3 class="heading" data-i18n="insp_h3">How it works</h3>
+          <p class="lede" data-i18n="insp_lede">We provide a range of residential property inspections, including existing Building Inspections and Practical Completion (PCI) inspections. We cover most areas in Victoria — contact us for more details and a free quotation.</p>
         </div>
         <div>
           <ol class="process">
-            <li><span class="num">1</span><div><h3>Choose your inspection</h3><p class="body-copy">An existing Building Inspection, or a Practical Completion (PCI) Inspection for a newly built home.</p></div></li>
-            <li><span class="num">2</span><div><h3>We walk the site</h3><p class="body-copy">An inspector checks structure, compliance, and finish against the approved plans and Australian Standards.</p></div></li>
-            <li><span class="num">3</span><div><h3>You get a report</h3><p class="body-copy">Issues are documented with photos, so you know exactly what to raise before you sign off.</p></div></li>
+            <li><span class="num">1</span><div><h3 data-i18n="insp_step1_h3">Choose your inspection</h3><p class="body-copy" data-i18n="insp_step1_body">An existing Building Inspection, or a Practical Completion (PCI) Inspection for a newly built home.</p></div></li>
+            <li><span class="num">2</span><div><h3 data-i18n="insp_step2_h3">We walk the site</h3><p class="body-copy" data-i18n="insp_step2_body">An inspector checks structure, compliance, and finish against the approved plans and Australian Standards.</p></div></li>
+            <li><span class="num">3</span><div><h3 data-i18n="insp_step3_h3">You get a report</h3><p class="body-copy" data-i18n="insp_step3_body">Issues are documented with photos, so you know exactly what to raise before you sign off.</p></div></li>
           </ol>
           <div class="callout">
-            <p class="quote">it's more than a checklist</p>
+            <p class="quote" data-i18n="insp_quote">it's more than a checklist</p>
           </div>
         </div>
       </div>
@@ -209,20 +210,20 @@
       </div>
       <div class="footer-cols">
         <div class="footer-col">
-          <h4>Address</h4>
+          <h4 data-i18n="footer_address_label">Address</h4>
           <p>Unit 8, 197-199 Springvale Road<br>Nunawading, VIC 3131</p>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
-          <a href="Kevin-Chan">Kevin Chan</a>
+          <h4 data-i18n="footer_contact_label">Contact</h4>
+          <p class="footer-contact-name">Kevin Chan 陳嘉文</p>
           <a href="tel:+61411330962">+61 411 330 962</a>
-          <a href="mailto:kmtang@nexconbm.com.au">kmtang@nexconbm.com.au</a>
+          <a href="mailto:kevin@nexcongroup.com.au">kevin@nexcongroup.com.au</a>
         </div>
         <div class="footer-col">
-          <h4>Explore</h4>
-          <a href="#services">Build specialist</a>
-          <a href="#house-and-land">House &amp; land</a>
-          <a href="#inspection">House inspections</a>
+          <h4 data-i18n="footer_explore_label">Explore</h4>
+          <a href="#services" data-i18n="nav_services">Build specialist</a>
+          <a href="#house-and-land" data-i18n="nav_house_land">House &amp; land</a>
+          <a href="#inspection" data-i18n="nav_inspections">House inspections</a>
         </div>
       </div>
     </div>
@@ -230,6 +231,8 @@
   </div>
 </footer>
 
+<script src="../translations.js"></script>
+<script src="../i18n.js"></script>
 <script>
   const navToggle = document.getElementById('navToggle');
   const siteNav = document.getElementById('siteNav');

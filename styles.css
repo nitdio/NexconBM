@@ -9,9 +9,9 @@
   --text:#2A1B1D;
   --line-on-sand: rgba(106,36,52,0.18);
   --line-on-bordeaux: rgba(220,160,147,0.22);
-  --ex: "Archivo Expanded", sans-serif;
-  --sans: "Archivo", -apple-system, Segoe UI, sans-serif;
-  --serif: "Source Serif Pro", Georgia, serif;
+  --ex: "Archivo Expanded", "Noto Sans TC", sans-serif;
+  --sans: "Archivo", "Noto Sans TC", -apple-system, Segoe UI, sans-serif;
+  --serif: "Source Serif Pro", "Noto Sans TC", Georgia, serif;
   --max: 1180px;
 }
 *{box-sizing:border-box;}
@@ -48,6 +48,8 @@ svg{display:block;}
 .site-nav a{text-decoration:none; font-size:0.92rem; font-weight:600; color:var(--text); padding:0.3em 0; border-bottom:2px solid transparent;}
 .site-nav a:hover{border-color:var(--rosette);}
 .site-nav a.is-active{border-color:var(--rosette);}
+.lang-toggle{font-family:var(--ex); font-weight:700; font-size:0.8rem; letter-spacing:0.02em; background:none; border:1.5px solid var(--bordeaux); color:var(--bordeaux); border-radius:999px; padding:0.35em 0.9em; cursor:pointer; transition:background-color .2s, color .2s;}
+.lang-toggle:hover{background:var(--bordeaux); color:var(--sandstone);}
 .pill{display:inline-block; font-family:var(--sans); font-weight:700; font-size:0.85rem; text-decoration:none; padding:0.7em 1.4em; border-radius:999px; transition:background-color .2s, color .2s;}
 .pill-primary{background:var(--bordeaux); color:var(--sandstone);}
 .pill-primary:hover{background:var(--mahogany);}
@@ -172,4 +174,5 @@ footer{background:var(--mahogany); color:var(--sandstone); padding:2.4rem 0 1.6r
 .footer-cols{display:flex; gap:clamp(2rem,6vw,5rem); flex-wrap:wrap;}
 .footer-col h4{font-family:var(--ex); font-weight:700; text-transform:uppercase; font-size:0.72rem; letter-spacing:0.05em; color:var(--blush); margin:0 0 0.7em;}
 .footer-col p, .footer-col a{font-size:0.92rem; margin:0 0 0.4em; text-decoration:none; display:block; color:var(--sandstone);}
+.footer-contact-name{font-weight:700; color:var(--blush);}
 .footer-bottom{margin-top:2rem; padding-top:1.2rem; border-top:1px solid rgba(244,238,231,0.2); font-size:0.78rem; color:rgba(244,238,231,0.6);}

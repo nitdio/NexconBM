@@ -7,12 +7,12 @@
 <meta name="description" content="Nexcon Building Management is a Melbourne-based building company specialising in renovations, knockdown rebuilds, custom design, and multi-unit development.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@500;600;700;800&family=Archivo:wght@400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css?v=2">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@500;600;700;800&family=Archivo:wght@400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=9">
 </head>
 <body>
 
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main" data-i18n="skip_link">Skip to content</a>
 
 <header class="site-header">
   <div class="header-inner">
@@ -20,11 +20,12 @@
       <img src="../nexcon-logo-horizontal.png" alt="Nexcon Building Management" class="logo-img">
     </a>
     <nav class="site-nav" id="siteNav">
-      <a href="../home/#services">Build specialist</a>
-      <a href="../home/#house-and-land">House &amp; land</a>
-      <a href="../home/#inspection">House inspections</a>
-      <a href="../about/" class="is-active">About</a>
-      <a href="#footer-contact">Contact</a>
+      <a href="../home/#services" data-i18n="nav_services">Build specialist</a>
+      <a href="../home/#house-and-land" data-i18n="nav_house_land">House &amp; land</a>
+      <a href="../home/#inspection" data-i18n="nav_inspections">House inspections</a>
+      <a href="../about/" class="is-active" data-i18n="nav_about">About</a>
+      <a href="../home/#footer-contact" data-i18n="nav_contact">Contact</a>
+      <button id="langToggle" class="lang-toggle" type="button" aria-label="切換至中文">中文</button>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav"><span></span></button>
   </div>
@@ -35,51 +36,51 @@
 
   <div class="page-intro">
     <div class="page-intro-inner">
-      <h1 class="heading heading-on-dark">About</h1>
-      <p class="lede lede-on-dark">A team that treats every project like it's their own home going up.</p>
+      <h1 class="heading heading-on-dark" data-i18n="about_page_h1">About</h1>
+      <p class="lede lede-on-dark" data-i18n="about_page_lede">A team that treats every project like it's their own home going up.</p>
     </div>
   </div>
 
   <div class="content-block">
     <div class="wrap" style="max-width:900px;">
-      <p class="eyebrow">Who we are</p>
-      <h2 class="heading" style="font-size:1.4rem; max-width:20ch;">About Nexcon Building Management</h2>
-      <p class="lede" style="max-width:60ch;">Building can be exciting and frustrating in the same week. Our job is to keep the process carefree — clear communication, honest timelines, and craftsmanship that holds up once the scaffolding comes down.</p>
-      <p class="body-copy" style="font-size:1.05rem; max-width:65ch;">From a straightforward renovation to a full knockdown rebuild or multi-unit development, we run every project the same way: fixed pricing so there are no surprises, our own inspection team checking every stage, and one point of contact who actually picks up the phone.</p>
+      <p class="eyebrow" data-i18n="about_eyebrow">Who we are</p>
+      <h2 class="heading" style="font-size:1.4rem; max-width:20ch;" data-i18n="about_h2">About Nexcon Building Management</h2>
+      <p class="lede" style="max-width:60ch;" data-i18n="about_lede">Building can be exciting and frustrating in the same week. Our job is to keep the process carefree — clear communication, honest timelines, and craftsmanship that holds up once the scaffolding comes down.</p>
+      <p class="body-copy" style="font-size:1.05rem; max-width:65ch;" data-i18n="about_body">From a straightforward renovation to a full knockdown rebuild or multi-unit development, we run every project the same way: fixed pricing so there are no surprises, our own inspection team checking every stage, and one point of contact who actually picks up the phone.</p>
 
       <div style="margin-top:2.5rem;">
-        <p class="eyebrow">Our values</p>
-        <h2 class="heading" style="font-size:1.4rem; margin-bottom:1.2rem;">What guides our work</h2>
+        <p class="eyebrow" data-i18n="values_eyebrow">Our values</p>
+        <h2 class="heading" style="font-size:1.4rem; margin-bottom:1.2rem;" data-i18n="values_h2">What guides our work</h2>
         <div class="service-list">
           <div class="service-item">
-            <p class="detail-label">Craftsmanship</p>
-            <p class="body-copy">We treat every build like it's our own — finished to a standard that holds up long after handover.</p>
+            <p class="detail-label" data-i18n="val_craft_label">Craftsmanship</p>
+            <p class="body-copy" data-i18n="val_craft_body">We treat every build like it's our own — finished to a standard that holds up long after handover.</p>
           </div>
           <div class="service-item">
-            <p class="detail-label">Transparency</p>
-            <p class="body-copy">Fixed-price packages and straight answers, so what you're quoted is what you pay.</p>
+            <p class="detail-label" data-i18n="val_transp_label">Transparency</p>
+            <p class="body-copy" data-i18n="val_transp_body">Fixed-price packages and straight answers, so what you're quoted is what you pay.</p>
           </div>
           <div class="service-item">
-            <p class="detail-label">Accountability</p>
-            <p class="body-copy">Our own inspection team checks every stage against the required standard — not an afterthought.</p>
+            <p class="detail-label" data-i18n="val_account_label">Accountability</p>
+            <p class="body-copy" data-i18n="val_account_body">Our own inspection team checks every stage against the required standard — not an afterthought.</p>
           </div>
           <div class="service-item">
-            <p class="detail-label">Communication</p>
-            <p class="body-copy">Clear, honest timelines and one point of contact from first sketch to the day you get the keys.</p>
+            <p class="detail-label" data-i18n="val_comm_label">Communication</p>
+            <p class="body-copy" data-i18n="val_comm_body">Clear, honest timelines and one point of contact from first sketch to the day you get the keys.</p>
           </div>
         </div>
       </div>
 
       <div style="margin-top:2.5rem;">
-        <p class="eyebrow">Our team</p>
-        <h2 class="heading" style="font-size:1.4rem; margin-bottom:1.2rem;">The people behind the build</h2>
+        <p class="eyebrow" data-i18n="team_eyebrow">Our team</p>
+        <h2 class="heading" style="font-size:1.4rem; margin-bottom:1.2rem;" data-i18n="team_h2">The people behind the build</h2>
         <div class="team-list">
           <div class="team-member">
             <img src="kevin-face.jpeg" alt="Kevin Chan" class="team-photo">
             <div>
               <p class="team-name">Kevin Chan 陳嘉文</p>
-              <p class="team-role">Senior Consultant</p>
-              <p class="body-copy">Kevin specialises in house and land packages and new house builds, and also looks after project management, building inspections, and multi unit developments.</p>
+              <p class="team-role" data-i18n="kevin_role">Senior Consultant</p>
+              <p class="body-copy" data-i18n="kevin_body">Kevin specialises in house and land packages and new house builds, and also looks after project management, building inspections, and multi unit developments.</p>
             </div>
             <img src="Kevin-whatsapp-QRcode.png" alt="Scan to chat with Kevin on WhatsApp" class="whatsapp-qr">
           </div>
@@ -87,8 +88,8 @@
             <div class="team-photo team-photo-placeholder" aria-hidden="true">MC</div>
             <div>
               <p class="team-name">Mark Cheung 張國泰</p>
-              <p class="team-role">Inspector</p>
-              <p class="body-copy">Mark works across house and land and established home projects, including knockdown rebuilds, and also handles property leasing management, building inspections, dispute advisory, and project management.</p>
+              <p class="team-role" data-i18n="mark_role">Inspector</p>
+              <p class="body-copy" data-i18n="mark_body">Mark works across house and land and established home projects, including knockdown rebuilds, and also handles property leasing management, building inspections, dispute advisory, and project management.</p>
             </div>
             <img src="Mark-whatsapp-QRcode.png" alt="Scan to chat with Mark on WhatsApp" class="whatsapp-qr">
           </div>
@@ -107,20 +108,20 @@
       </div>
       <div class="footer-cols">
         <div class="footer-col">
-          <h4>Address</h4>
+          <h4 data-i18n="footer_address_label">Address</h4>
           <p>Unit 8, 197-199 Springvale Road<br>Nunawading, VIC 3131</p>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
-          <a href="Kevin-Chan">Kevin Chan</a>
+          <h4 data-i18n="footer_contact_label">Contact</h4>
+          <p class="footer-contact-name">Kevin Chan 陳嘉文</p>
           <a href="tel:+61411330962">+61 411 330 962</a>
-          <a href="mailto:kmtang@nexconbm.com.au">kmtang@nexconbm.com.au</a>
+          <a href="mailto:kevin@nexcongroup.com.au">kevin@nexcongroup.com.au</a>
         </div>
         <div class="footer-col">
-          <h4>Explore</h4>
-          <a href="../home/#services">Build specialist</a>
-          <a href="../home/#house-and-land">House &amp; land</a>
-          <a href="../home/#inspection">House inspections</a>
+          <h4 data-i18n="footer_explore_label">Explore</h4>
+          <a href="../home/#services" data-i18n="nav_services">Build specialist</a>
+          <a href="../home/#house-and-land" data-i18n="nav_house_land">House &amp; land</a>
+          <a href="../home/#inspection" data-i18n="nav_inspections">House inspections</a>
         </div>
       </div>
     </div>
@@ -128,6 +129,8 @@
   </div>
 </footer>
 
+<script src="../translations.js"></script>
+<script src="../i18n.js"></script>
 <script>
   const navToggle = document.getElementById('navToggle');
   const siteNav = document.getElementById('siteNav');
