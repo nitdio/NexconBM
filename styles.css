@@ -150,6 +150,19 @@ svg{display:block;}
 /* about statement */
 .about-block .quote{font-size:clamp(1.3rem,2.6vw,1.7rem); max-width:26ch; margin-bottom:0.6em;}
 
+/* contact form */
+.contact-form{display:flex; flex-direction:column; gap:1.2rem;}
+.contact-form .field{display:flex; flex-direction:column; gap:0.4rem;}
+.contact-form label{font-family:var(--ex); font-weight:600; text-transform:uppercase; letter-spacing:0.04em; font-size:0.75rem; color:var(--bordeaux);}
+.contact-form input, .contact-form textarea{font-family:var(--sans); font-size:1rem; padding:0.7em 0.9em; border:1px solid var(--line-on-sand); border-radius:2px; background:#fff; color:var(--text);}
+.contact-form input:focus, .contact-form textarea:focus{outline:2px solid var(--rosette); outline-offset:1px;}
+.contact-submit{align-self:flex-start; border:none; cursor:pointer; margin-top:0.5rem;}
+.contact-error{font-family:var(--sans); font-size:0.9rem; color:var(--rosette); margin-top:0.8rem;}
+.contact-warning{font-family:var(--sans); font-weight:600; font-size:0.92rem; color:var(--mahogany); background:rgba(183,140,0,0.12); border-left:3px solid var(--ochre); padding:0.7em 1em; margin-top:0.8rem;}
+.contact-success{background:#fff; border:1px solid var(--line-on-sand); border-left:4px solid var(--bordeaux); border-radius:2px; padding:1.4rem 1.6rem; margin-top:1.5rem;}
+.contact-success-title{font-family:var(--ex); font-weight:700; text-transform:uppercase; letter-spacing:0.02em; font-size:1.1rem; color:var(--bordeaux); margin:0 0 0.4em;}
+.contact-success-body{font-family:var(--sans); font-size:0.98rem; color:var(--text); margin:0;}
+
 /* team */
 .team-list{display:grid; gap:2rem;}
 .team-member{display:grid; grid-template-columns:140px 1fr auto; gap:1.8rem; align-items:start; padding-top:1.8rem; border-top:1px solid var(--line-on-sand);}
